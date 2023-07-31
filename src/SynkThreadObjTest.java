@@ -5,7 +5,7 @@ public class SynkThreadObjTest {
 
     volatile int counter = 0;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         SynkThreadObjTest synkThreadObjTest = new SynkThreadObjTest();
 
         List<Thread> threads = new ArrayList<>();
@@ -31,6 +31,5 @@ public class SynkThreadObjTest {
             t.join();
         }
 
-        System.out.println(counter);
     }
 }

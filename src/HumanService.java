@@ -11,6 +11,6 @@ public class HumanService {
         long end = System.currentTimeMillis();
 
         long requestDuration = end - begin;
-        sendRequestDuarationToAnaticService(requestDuration);
+        //sendRequestDuarationToAnaticService(requestDuration);
     }
 }
